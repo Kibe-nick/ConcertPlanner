@@ -25,12 +25,12 @@ Clone the repo:
 1.git clone https://github.com/your-username/concert-planner.git
 cd concert-planner
 2.Set up a virtual environment (optional but recommended):
-python -m venv venv
-source venv/bin/activate   venv\Scripts\activate
+pipenv install # to setup
+pipenv shell # to activate
 3.Install dependencies:
-pip install -r requirements.txt
+pip install sqlalchemy 
 4.Set up the database:
-python setup_db.py
+python initialize_db.py
 4.Run the app:
 python main.py
 
